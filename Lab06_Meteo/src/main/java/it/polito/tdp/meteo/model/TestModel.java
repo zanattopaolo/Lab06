@@ -6,9 +6,12 @@ public class TestModel {
 		
 		Model m = new Model();
 		
-		System.out.println(m.getUmiditaMedia(12));
+		//System.out.println(m.getUmiditaMedia(12));
 		
-		System.out.println(m.trovaSequenza(5));
+		Itinerario bestItinerario=m.trovaSequenza(5);
+		System.out.println(bestItinerario.getCosto());
+		for(Citta c: bestItinerario.getTragitto())		
+			System.out.println(c.toString());
 		
 
 	}

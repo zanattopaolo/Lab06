@@ -47,6 +47,10 @@ public class Citta {
 	public void increaseCounter() {
 		this.counter += 1;
 	}
+	
+	public void tripleIncreaseCounter() {
+		this.counter += 3;
+	}
 
 	@Override
 	public int hashCode() {
